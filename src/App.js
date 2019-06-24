@@ -28,14 +28,8 @@ class App extends Component {
       isSignedIn:false,
 
     }
-  }
-  componentDidMount(){
-    fetch('http://localhost:3000')
-    .then(response=>response.json())
-    .then(console.log)
-  }
 
-  onRouteChange=(route)=>{
+    this.onRouteChange=(route)=>{
     if(route==="signout"){
       this.setState({isSignedIn:false})
     }else if(route==='home'){
@@ -43,6 +37,12 @@ class App extends Component {
     }
     this.setState({route:route})
   }
+  }
+  
+
+  
+
+  
   render(){
     return(
       <div className="App">
