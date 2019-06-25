@@ -107,7 +107,7 @@ class Form extends React.Component {
 
 		this.submitForm=()=>{
 			console.log(this.state)
-			fetch('http://localhost:3000/form',
+			fetch('https://serene-sierra-72794.herokuapp.com/form',
 			{
 				method:'post',
 				headers:{'Content-Type':'application/json'},
