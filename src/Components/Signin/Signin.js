@@ -29,6 +29,7 @@ class Signin extends React.Component{
 		.then(data =>{
 			console.log(data)
 			if(data.id){
+				localStorage.setItem('webtoken',data.id)
 
 				this.props.onRouteChange('home')
 
